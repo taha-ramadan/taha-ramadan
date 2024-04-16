@@ -12,23 +12,11 @@
   <h1 class="title">تطبيق منصة الأستاذ طه رمضان</h1>
   <button id="downloadButton">اضغط للتحميل</button>
 </div>
-
+  
 <script>
 document.getElementById("downloadButton").onclick = function() {
   // Change the file URL to your specific file
-  var fileUrl = "file_url";
-  
-  fetch(fileUrl)
-    .then(response => response.blob())
-    .then(blob => {
-      // Create a temporary anchor element
-      var downloadLink = document.createElement("a");
-      downloadLink.href = URL.createObjectURL(blob);
-      downloadLink.download = "Taha-Ramadan.apk"; // Optional: specify the filename to save as
-      downloadLink.click();
-      URL.revokeObjectURL(downloadLink.href); // Release the object URL resource
-    })
-    .catch(error => console.error("Error downloading file:", error));
+  window.location.href = "yputube.com";
 };
 </script>
 
